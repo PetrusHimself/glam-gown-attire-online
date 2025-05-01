@@ -71,7 +71,8 @@ export default {
 			},
 			fontFamily: {
 				'playfair': ['Playfair Display', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif']
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'josefin': ['Josefin Sans', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

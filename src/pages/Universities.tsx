@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -83,8 +82,7 @@ const Universities = () => {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <section className="bg-navy text-white py-16 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1607013407627-6848502d7f3a?q=80&w=2000&auto=format&fit=crop')] opacity-20 bg-cover bg-center"></div>
+      <section className="motion-gradient text-white py-16 relative">
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center font-playfair mb-6">
             South African Universities
