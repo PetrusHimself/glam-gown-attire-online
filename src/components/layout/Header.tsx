@@ -40,7 +40,7 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://www.instagram.com/glamgownsattire" target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">
+            <a href="https://www.instagram.com/glam_gown_attire" target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">
               <Instagram size={16} />
             </a>
             <a href="https://www.tiktok.com/@glamgowns" target="_blank" rel="noreferrer" className="hover:text-gold transition-colors">
