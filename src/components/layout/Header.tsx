@@ -66,10 +66,6 @@ const Header = () => {
                 alt="Glam Attire Logo" 
                 className="w-22 h-20 rounded-full"
               />
-              <div>
-                <div className="font-playfair font-bold text-xl tracking-tight">Glam Attire</div>
-                <div className="text-xs text-charcoal">Lets Dress You</div>
-              </div>
             </Link>
           </div>
 
