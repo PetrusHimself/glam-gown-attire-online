@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,8 +6,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-gray-900 to-black text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop')] opacity-30 bg-cover bg-center"></div>
+      <section className="motion-gradient text-white py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-bold text-center font-playfair animate-fade-in">
             Let's Dress You For Your
@@ -21,8 +19,8 @@ const Index = () => {
             <Button asChild size="lg" className="bg-gold hover:bg-amber-600 text-black">
               <Link to="/hire">Hire Attire</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
-              <Link to="/buy">Buy Attire</Link>
+            <Button asChild size="lg" className="bg-black hover:bg-gray-800 text-white">
+              <Link to="/buy">Buy</Link>
             </Button>
           </div>
         </div>
@@ -183,7 +181,7 @@ const Index = () => {
             <Button asChild size="lg" className="bg-gold hover:bg-amber-600 text-black">
               <Link to="/contact">Contact Us</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-navy">
+            <Button asChild size="lg" className="bg-black hover:bg-gray-800 text-white">
               <Link to="/universities">View Universities</Link>
             </Button>
           </div>
