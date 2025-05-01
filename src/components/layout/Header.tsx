@@ -61,12 +61,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              <div className="bg-black rounded-full w-10 h-10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
-                </svg>
-              </div>
+              <img 
+                src="/lovable-uploads/8c1efe15-c4cb-4278-b09a-9fab4f83563c.png" 
+                alt="Glam Attire Logo" 
+                className="w-10 h-10 rounded-full"
+              />
               <div>
                 <div className="font-playfair font-bold text-xl tracking-tight">Glam Attire</div>
                 <div className="text-xs text-charcoal">Lets Dress You</div>
