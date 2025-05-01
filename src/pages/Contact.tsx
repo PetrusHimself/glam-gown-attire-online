@@ -217,7 +217,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Email</h3>
                       <p className="text-gray-600">
-                        <a href="mailto:info@glamattire.co.za" className="hover:text-gold transition-colors">info@glamattire.co.za</a>
+                        <a href="mailto:glamgownattire@gmail.com" className="hover:text-gold transition-colors">glamgownattire@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -277,10 +277,8 @@ const Contact = () => {
                     rel="noreferrer" 
                     className="flex items-center gap-3 bg-black text-white px-4 py-3 rounded-md hover:bg-gray-800 transition-colors"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-music">
-                      <path d="M9 18V5l12-2v13" />
-                      <circle cx="6" cy="18" r="3" />
-                      <circle cx="18" cy="16" r="3" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
                     </svg>
                     <span>Follow on TikTok</span>
                   </a>

@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="motion-gradient text-white py-16 md:py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-center font-playfair animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-bold text-center font-josefin animate-fade-in">
             Let's Dress You For Your
             <span className="text-gold block mt-1">Graduation Day</span>
           </h1>
