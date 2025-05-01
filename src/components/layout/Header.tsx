@@ -64,7 +64,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/8c1efe15-c4cb-4278-b09a-9fab4f83563c.png" 
                 alt="Glam Attire Logo" 
-                className="w-16 h-10 rounded-full"
+                className="w-22 h-20 rounded-full"
               />
               <div>
                 <div className="font-playfair font-bold text-xl tracking-tight">Glam Attire</div>
