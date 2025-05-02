@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Header from "./components/layout/Header";
@@ -22,6 +23,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Helmet defaultTitle="Glam Attire - Graduation Attire Rental & Sales" titleTemplate="%s | Glam Attire">
+          <meta name="description" content="Professional graduation attire rental and sales for universities across South Africa." />
+        </Helmet>
         <Header />
         <main>
           <Routes>
