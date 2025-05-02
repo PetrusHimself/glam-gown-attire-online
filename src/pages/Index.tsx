@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import GraduationCarousel from "@/components/GraduationCarousel";
 
 const Index = () => {
   return (
@@ -26,6 +27,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Graduation Photo Carousel */}
+      <GraduationCarousel />
 
       {/* Services Overview */}
       <section className="py-16 bg-ivory">
