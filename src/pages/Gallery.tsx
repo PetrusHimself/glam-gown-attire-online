@@ -1,5 +1,4 @@
 
-import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 
 const Gallery = () => {
@@ -29,10 +28,6 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
-      <Helmet>
-        <title>Gallery | Glam Attire</title>
-      </Helmet>
-      
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold font-playfair mb-4">Graduation Gallery</h1>
