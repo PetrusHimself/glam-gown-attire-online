@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Gallery, ChevronRight } from "lucide-react";
+import { ImageIcon, ChevronRight } from "lucide-react";
 import { 
   Carousel, 
   CarouselContent, 
@@ -42,7 +42,7 @@ const GraduationCarousel = () => {
           <h2 className="text-3xl font-bold font-playfair">Graduation Moments</h2>
           <Button asChild className="bg-navy hover:bg-navy/90 text-white flex items-center gap-2">
             <Link to="/gallery">
-              <Gallery size={18} />
+              <ImageIcon size={18} />
               View Gallery
               <ChevronRight size={16} />
             </Link>
