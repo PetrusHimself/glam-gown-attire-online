@@ -13,8 +13,6 @@ import Buy from "./pages/Buy";
 import About from "./pages/About";
 import Universities from "./pages/Universities";
 import Contact from "./pages/Contact";
-import Gallery from "./pages/Gallery";
-import { Helmet } from "react-helmet";
 
 const queryClient = new QueryClient();
 
@@ -24,9 +22,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Helmet titleTemplate="%s | Glam Attire" defaultTitle="Glam Attire - Graduation Gowns & Academic Attire">
-          <meta name="description" content="Professional graduation attire rental and sales for universities across South Africa." />
-        </Helmet>
         <Header />
         <main>
           <Routes>
@@ -36,7 +31,6 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/universities" element={<Universities />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
