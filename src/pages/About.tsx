@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -35,8 +36,12 @@ const About = () => {
             
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold"></div>
-              <div className="bg-gray-200 h-full w-full min-h-[300px] relative z-10 flex items-center justify-center text-gray-500">
-                Graduation Attire Image
+              <div className="relative z-10 w-full h-full min-h-[300px]">
+                <img 
+                  src="/lovable-uploads/e2139a0b-5828-4e20-bc9e-a5ba6603f410.png" 
+                  alt="Graduate in cap and gown with blue and red accent colors" 
+                  className="w-full h-full object-cover rounded"
+                />
               </div>
             </div>
           </div>
