@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import GallerySection from "../components/GallerySection";
 
@@ -40,7 +39,11 @@ const Index = () => {
             {/* Hire Service */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64 bg-gray-200">
-                <div className="flex items-center justify-center h-full text-gray-500">Graduation Attire Image</div>
+                <img 
+                  src="/lovable-uploads/e2139a0b-5828-4e20-bc9e-a5ba6603f410.png" 
+                  alt="Graduate in cap and gown" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4 bg-gold text-black py-1 px-3 rounded font-medium">
                   From R300
                 </div>
@@ -100,6 +103,11 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+          </div>
+          
+          {/* Credit line */}
+          <div className="text-center mt-8 text-gray-600 text-sm">
+            Designed with <Heart size={16} className="inline text-red-500 mx-1" fill="currentColor" /> by <a href="https://regconline.co.za" target="_blank" rel="noopener noreferrer" className="text-navy hover:underline">REGC Digital</a>
           </div>
         </div>
       </section>
