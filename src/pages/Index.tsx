@@ -35,8 +35,12 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Hire Service */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 bg-gray-200">
-                <div className="flex items-center justify-center h-full text-gray-500">Graduation Attire Image</div>
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Students in graduation attire" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4 bg-gold text-black py-1 px-3 rounded font-medium">
                   From R300
                 </div>
@@ -67,8 +71,12 @@ const Index = () => {
 
             {/* Buy Service */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 bg-gray-200">
-                <div className="flex items-center justify-center h-full text-gray-500">Purchase Options Image</div>
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Graduation attire for purchase" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4 bg-gold text-black py-1 px-3 rounded font-medium">
                   From R300
                 </div>
