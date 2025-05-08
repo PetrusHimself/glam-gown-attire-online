@@ -13,6 +13,7 @@ import Buy from "./pages/Buy";
 import About from "./pages/About";
 import Universities from "./pages/Universities";
 import Contact from "./pages/Contact";
+import { Helmet } from "react-helmet";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Helmet
+          defaultTitle="Glam Attire - Graduation Gowns & Academic Attire"
+          titleTemplate="%s | Glam Attire"
+        >
+          <meta
+            name="description"
+            content="Professional graduation attire rental and sales for universities across South Africa."
+          />
+        </Helmet>
         <Header />
         <main>
           <Routes>
