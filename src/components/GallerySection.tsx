@@ -8,10 +8,10 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState, useEffect } from "react";
-import { useMediaQuery } from "@/hooks/use-mobile";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const GallerySection = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isMobile = useIsMobile();
   const [api, setApi] = useState<any>();
   const [currentSlide, setCurrentSlide] = useState(0);
 
