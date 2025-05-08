@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import GallerySection from "../components/GallerySection";
 
 const Index = () => {
   return (
@@ -26,6 +27,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <GallerySection />
 
       {/* Services Overview */}
       <section className="py-16 bg-ivory">
