@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -75,7 +76,11 @@ const Index = () => {
             {/* Buy Service */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-64 bg-gray-200">
-                <div className="flex items-center justify-center h-full text-gray-500">Purchase Options Image</div>
+                <img 
+                  src="/lovable-uploads/a27ddd37-bb97-4fb9-ae50-2a8f35b836c1.png" 
+                  alt="Graduate with cap and gown" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute top-4 left-4 bg-gold text-black py-1 px-3 rounded font-medium">
                   From R300
                 </div>
