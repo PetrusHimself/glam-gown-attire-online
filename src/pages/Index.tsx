@@ -104,11 +104,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
-          {/* Credit line */}
-          <div className="text-center mt-8 text-gray-600 text-sm">
-            Designed with <Heart size={16} className="inline text-red-500 mx-1" fill="currentColor" /> by <a href="https://regconline.co.za" target="_blank" rel="noopener noreferrer" className="text-navy hover:underline">REGC Digital</a>
-          </div>
         </div>
       </section>
 

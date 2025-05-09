@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Instagram, Clock, MapPin, MessageCircleMore } from 'lucide-react';
+import { Phone, Mail, Instagram, Clock, MapPin, MessageCircleMore, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -92,6 +92,9 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
           <p>&copy; {currentYear} Glam Attire. All rights reserved.</p>
+          <p className="mt-1">
+            Designed with <Heart size={16} className="inline text-red-500 mx-1" fill="currentColor" /> by <a href="https://regconline.co.za" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors">REGC Digital</a>
+          </p>
         </div>
       </div>
     </footer>
