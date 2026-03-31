@@ -240,8 +240,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
-                      <p className="text-gray-600 mb-1">Monday to Friday: 9:30-17:00</p>
-                      <p className="text-gray-600">Saturday: 9:30-13:00</p>
+                      <p className="text-gray-600 mb-1">Monday to Friday: 10:00-17:00</p>
+                      <p className="text-gray-600">Saturday: 10:00-13:00</p>
                     </div>
                   </div>
                 </div>
