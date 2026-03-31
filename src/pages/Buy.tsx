@@ -13,26 +13,20 @@ const Buy = () => {
     {
       name: "Full Set",
       description: "Complete graduation attire set including gown, cap, tassel, hood/belt, and scroll holder",
-      price: "R2000",
+      price: "R2100",
       image: "https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Gown",
       description: "High-quality graduation gown in your university's colors",
-      price: "R800",
+      price: "R850",
       image: "https://images.unsplash.com/photo-1627556704253-f95136e839b3?q=80&w=800&auto=format&fit=crop"
     },
     {
-      name: "Belt",
+      name: "Belt/Hood",
       description: "University-specific graduation belt/sash",
-      price: "R350",
+      price: "R400",
       image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?q=80&w=800&auto=format&fit=crop"
-    },
-    {
-      name: "Hood",
-      description: "Academic hood in your university's colors",
-      price: "R550",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop"
     },
     {
       name: "Cap",
