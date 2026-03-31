@@ -92,7 +92,7 @@ const Index = () => {
                 </p>
                 <ul className="text-gray-700 mb-6 space-y-2">
                   <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> Full Set R2000
+                    <span className="text-gold mr-2">✓</span> Full Set R2100
                   </li>
                   <li className="flex items-center">
                     <span className="text-gold mr-2">✓</span> Individual items available

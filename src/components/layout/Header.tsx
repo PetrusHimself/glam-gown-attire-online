@@ -1,7 +1,14 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { MoreHorizontal, X, Phone, Mail, Instagram } from 'lucide-react';
+import { X, Phone, Mail, Instagram } from 'lucide-react';
+
+const TwoLineMenu = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <line x1="3" y1="15" x2="21" y2="15" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+  </svg>
+);
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,25 +69,25 @@ const Header = () => {
 
       {/* Main header */}
       <div className="bg-white shadow-sm">
-        <div className="container mx-auto flex justify-between items-center py-4 px-4">
+        <div className="container mx-auto flex justify-between items-center py-2 px-4">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              <img 
-                src="/lovable-uploads/8c1efe15-c4cb-4278-b09a-9fab4f83563c.png" 
-                alt="Glam Attire Logo" 
-                className="w-18 h-16 rounded-full"
+              <img
+                src="/lovable-uploads/8c1efe15-c4cb-4278-b09a-9fab4f83563c.png"
+                alt="Glam Attire Logo"
+                className="w-20 h-20 rounded-full object-cover"
               />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
-              <Link 
+              <Link
                 key={link.path}
                 to={link.path}
-                className={`${isActive(link.path)} text-charcoal hover:text-black pb-1 transition-colors`}
+                className={`${isActive(link.path)} text-charcoal hover:text-black pb-1 transition-colors text-sm font-medium whitespace-nowrap`}
               >
                 {link.name}
               </Link>
@@ -88,15 +95,15 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
-            onClick={toggleMenu} 
-            className="md:hidden flex items-center"
+          <button
+            onClick={toggleMenu}
+            className="md:hidden flex items-center p-1"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
               <X size={24} className="text-charcoal" />
             ) : (
-              <MoreHorizontal size={24} className="text-charcoal" />
+              <span className="text-charcoal"><TwoLineMenu /></span>
             )}
           </button>
         </div>
@@ -104,7 +111,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute top-[113px] left-0 right-0 z-50 animate-fade-in">
+        <div className="md:hidden bg-white shadow-lg absolute top-[109px] left-0 right-0 z-50 animate-fade-in">
           <div className="container mx-auto py-4 px-6">
             <nav className="flex flex-col space-y-4">
               {navLinks.map((link) => (

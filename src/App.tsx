@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 import Hire from "./pages/Hire";
 import Buy from "./pages/Buy";
 import About from "./pages/About";
@@ -23,6 +24,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Header />
+        <WhatsAppWidget />
         <main>
           <Routes>
             <Route path="/" element={<Index />} />
