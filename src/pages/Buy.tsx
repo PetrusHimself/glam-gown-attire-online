@@ -38,7 +38,7 @@ const Buy = () => {
       name: "Scroll",
       description: "Elegant scroll holder for your degree certificate",
       price: "R300",
-      image: "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=800&auto=format&fit=crop"
+      image: "/lovable-uploads/scrolls.jpg"
     }
   ];
   
@@ -48,7 +48,7 @@ const Buy = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-black text-white py-16 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=2000&auto=format&fit=crop')] opacity-30 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/scrolls.jpg')] opacity-30 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center font-playfair mb-6">
             Purchase Graduation Attire
