@@ -82,7 +82,7 @@ const Index = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-gold text-black py-1 px-3 rounded font-medium">
-                  From R300
+                  From R2100
                 </div>
               </div>
               <div className="p-6">
