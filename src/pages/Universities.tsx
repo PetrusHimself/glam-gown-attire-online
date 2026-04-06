@@ -14,63 +14,63 @@ const Universities = () => {
       abbreviation: "UCT",
       colors: "Blue and white",
       attireDetails: "Navy blue gown with blue and white hood",
-      image: "https://images.unsplash.com/photo-1583373834259-46cc92173cb7?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-gown.jpg"
     },
     {
       name: "University of Witwatersrand",
       abbreviation: "Wits",
       colors: "Blue and gold",
       attireDetails: "Black gown with blue and gold hood",
-      image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-belt.jpg"
     },
     {
       name: "University of Johannesburg",
       abbreviation: "UJ",
       colors: "Orange and white",
       attireDetails: "Black gown with orange and white hood",
-      image: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-fullset.jpg"
     },
     {
       name: "Stellenbosch University",
       abbreviation: "SU",
       colors: "Maroon and gold",
       attireDetails: "Black gown with maroon and gold hood",
-      image: "https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-night.jpg"
     },
     {
       name: "University of Pretoria",
       abbreviation: "UP",
       colors: "Red and blue",
       attireDetails: "Black gown with red and blue hood",
-      image: "https://images.unsplash.com/photo-1576495169018-bd2414046c6b?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-cap.jpg"
     },
     {
       name: "Rhodes University",
       abbreviation: "RU",
       colors: "Purple and black",
       attireDetails: "Black gown with purple trim",
-      image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-male.jpg"
     },
     {
       name: "University of KwaZulu-Natal",
       abbreviation: "UKZN",
       colors: "Blue and gold",
       attireDetails: "Black gown with blue and gold hood",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-celebrate.jpg"
     },
     {
       name: "Nelson Mandela University",
       abbreviation: "NMU",
       colors: "Blue and yellow",
       attireDetails: "Black gown with blue and yellow hood",
-      image: "https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-gown.jpg"
     },
     {
       name: "North-West University",
       abbreviation: "NWU",
       colors: "Purple and white",
       attireDetails: "Black gown with purple and white hood",
-      image: "https://images.unsplash.com/photo-1559078228-43a1e5e07c7a?q=80&w=600&auto=format&fit=crop"
+      image: "/lovable-uploads/grad-night.jpg"
     }
   ];
   

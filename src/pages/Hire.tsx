@@ -9,7 +9,7 @@ const Hire = () => {
     <div className="min-h-screen">
       {/* Header */}
       <section className="bg-black text-white py-16 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1588072430131-0853ffd9e075?q=80&w=2000&auto=format&fit=crop')] opacity-30 bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/grad-night.jpg')] opacity-40 bg-cover bg-center"></div>
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center font-playfair mb-6">
             Graduation Attire Rentals
@@ -74,8 +74,8 @@ const Hire = () => {
             
             <div className="space-y-6">
               <img 
-                src="https://images.unsplash.com/photo-1627556704302-624286467c65?q=80&w=1200&auto=format&fit=crop" 
-                alt="Graduation cap and gown" 
+                src="/lovable-uploads/grad-celebrate.jpg" 
+                alt="Graduate celebrating with diploma" 
                 className="rounded-lg shadow-md w-full h-64 object-cover mb-6"
               />
               

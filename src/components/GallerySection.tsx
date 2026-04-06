@@ -32,6 +32,34 @@ const GallerySection = () => {
 
   const galleryImages = [
     {
+      src: "/lovable-uploads/grad-fullset.jpg",
+      alt: "Graduate in full set attire with red hood and cap"
+    },
+    {
+      src: "/lovable-uploads/grad-gown.jpg",
+      alt: "Graduate in gown with cap and orange tassel outdoors"
+    },
+    {
+      src: "/lovable-uploads/grad-celebrate.jpg",
+      alt: "Graduate celebrating with diploma raised high"
+    },
+    {
+      src: "/lovable-uploads/grad-belt.jpg",
+      alt: "Graduate wearing belt and hood detail"
+    },
+    {
+      src: "/lovable-uploads/grad-cap.jpg",
+      alt: "Graduate holding graduation cap"
+    },
+    {
+      src: "/lovable-uploads/grad-night.jpg",
+      alt: "Graduate in formal attire at night ceremony"
+    },
+    {
+      src: "/lovable-uploads/grad-male.jpg",
+      alt: "Male graduate in gown holding scroll"
+    },
+    {
       src: "/lovable-uploads/8f78e40b-6fe8-4f24-88f5-dc7ebf6d6439.png",
       alt: "Graduate holding graduation cap with orange tassel"
     },
