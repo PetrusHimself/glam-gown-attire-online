@@ -24,45 +24,44 @@ const Hire = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Rental Information */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center font-playfair mb-10">Rental Details</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold font-playfair mb-4">Pricing</h3>
-                <p className="text-2xl font-bold text-gold mb-4">Full Set Hire: R300</p>
-                <p className="text-gray-600">
-                  Our rental package includes the complete graduation attire set: gown, cap, tassel, hood/belt, and scroll holder.
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center border-b pb-3">
+                    <span className="font-medium text-gray-700">Hiring Fee</span>
+                    <span className="text-2xl font-bold text-gold">R300</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium text-gray-700">Refundable Deposit</span>
+                    <span className="text-2xl font-bold text-gold">R300</span>
+                  </div>
+                </div>
+                <p className="text-gray-500 text-sm mt-4">
+                  The deposit is fully refunded once the graduation regalia is returned in good condition.
                 </p>
               </div>
-              
+
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold font-playfair mb-4">Size Availability</h3>
                 <ul className="grid grid-cols-2 gap-2">
-                  <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> Small
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> Medium
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> Large
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> X-Large
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-gold mr-2">✓</span> XX-Large
-                  </li>
+                  {["Small", "Medium", "Large", "X-Large", "XX-Large"].map(size => (
+                    <li key={size} className="flex items-center">
+                      <span className="text-gold mr-2">✓</span> {size}
+                    </li>
+                  ))}
                 </ul>
               </div>
-              
+
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold font-playfair mb-4">Coverage</h3>
+                <h3 className="text-xl font-bold font-playfair mb-4">University Coverage</h3>
                 <p className="text-gray-600 mb-4">
                   We provide graduation attire for all major South African universities, ensuring the correct colors and specifications.
                 </p>
@@ -71,18 +70,18 @@ const Hire = () => {
                 </Button>
               </div>
             </div>
-            
+
             <div className="space-y-6">
-              <img 
-                src="/lovable-uploads/grad-celebrate.jpg" 
-                alt="Graduate celebrating with diploma" 
+              <img
+                src="/lovable-uploads/grad-celebrate.jpg"
+                alt="Graduate celebrating with diploma"
                 className="rounded-lg shadow-md w-full h-64 object-cover mb-6"
               />
-              
+
               <div className="bg-navy text-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold font-playfair mb-4">Ready to Rent?</h3>
                 <p className="mb-6">
-                  Contact us today to arrange your graduation attire rental. We'll ensure you have the perfect fit and correct university specifications.
+                  Contact us today to arrange your graduation attire rental. Pay your deposit to secure your regalia — no reservation is made without deposit payment.
                 </p>
                 <div className="flex flex-col space-y-3">
                   <Button asChild className="bg-gold hover:bg-amber-600 text-black w-full">
@@ -97,245 +96,206 @@ const Hire = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Rental Process */}
       <section id="hire-process" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-playfair mb-12">Rental Process</h2>
-          
+          <h2 className="text-3xl font-bold text-center font-playfair mb-12">Hiring Process</h2>
+
           <div className="max-w-3xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gray-300"></div>
-              
+
               {/* Step 1 */}
               <div className="relative pl-16 pb-10">
                 <div className="absolute left-0 top-1 bg-gold text-black rounded-full w-10 h-10 flex items-center justify-center font-bold">1</div>
                 <h3 className="text-xl font-bold font-playfair mb-2">Contact Us</h3>
                 <p className="text-gray-600">
-                  Reach out to us via phone, WhatsApp, or our contact form to inquire about your graduation attire needs. Let us know your university, graduation date, and size requirements.
+                  Reach out to us via phone, WhatsApp, or our contact form. Let us know your university, graduation date, and size requirements so we can confirm availability.
                 </p>
               </div>
-              
+
               {/* Step 2 */}
               <div className="relative pl-16 pb-10">
                 <div className="absolute left-0 top-1 bg-gold text-black rounded-full w-10 h-10 flex items-center justify-center font-bold">2</div>
-                <h3 className="text-xl font-bold font-playfair mb-2">Confirm and Reserve</h3>
+                <h3 className="text-xl font-bold font-playfair mb-2">Pay the Deposit to Reserve</h3>
                 <p className="text-gray-600">
-                  Once we've confirmed availability for your size and university specifications, place your reservation with a 50% deposit to secure your attire.
+                  Pay the <strong>R300 refundable deposit</strong> to secure your regalia. Graduation attire is <strong>only reserved once the deposit has been paid</strong> — no regalia will be held without it. Use your name and graduation date as the payment reference.
                 </p>
               </div>
-              
+
               {/* Step 3 */}
               <div className="relative pl-16 pb-10">
                 <div className="absolute left-0 top-1 bg-gold text-black rounded-full w-10 h-10 flex items-center justify-center font-bold">3</div>
-                <h3 className="text-xl font-bold font-playfair mb-2">Collection/Delivery</h3>
+                <h3 className="text-xl font-bold font-playfair mb-2">Collection — 1 Day Before Graduation</h3>
                 <p className="text-gray-600">
-                  Collect your graduation attire from our Melville location, or arrange for delivery (additional costs may apply) 1-3 days before your graduation ceremony.
+                  Collect your graduation regalia <strong>one (1) day before your graduation ceremony</strong>. Please also pay the <strong>R300 hiring fee</strong> at this point if not yet settled.
                 </p>
               </div>
-              
+
               {/* Step 4 */}
               <div className="relative pl-16 pb-10">
                 <div className="absolute left-0 top-1 bg-gold text-black rounded-full w-10 h-10 flex items-center justify-center font-bold">4</div>
                 <h3 className="text-xl font-bold font-playfair mb-2">Enjoy Your Graduation</h3>
                 <p className="text-gray-600">
-                  Look professional and polished for your graduation ceremony in your high-quality attire from Glam Attire.
+                  Look your very best on your special day in high-quality, properly fitted graduation attire from Glam Gown Attire.
                 </p>
               </div>
-              
+
               {/* Step 5 */}
               <div className="relative pl-16">
                 <div className="absolute left-0 top-1 bg-gold text-black rounded-full w-10 h-10 flex items-center justify-center font-bold">5</div>
-                <h3 className="text-xl font-bold font-playfair mb-2">Return</h3>
+                <h3 className="text-xl font-bold font-playfair mb-2">Return by 12:00 PM the Next Day</h3>
                 <p className="text-gray-600">
-                  Return your attire within 3 days after your graduation to our Melville location. We'll inspect the items and refund your deposit if everything is in good condition.
+                  Return all regalia <strong>no later than 12:00 PM (midday) on the day following your graduation</strong>. Once items are inspected and confirmed in good condition, your <strong>R300 deposit is refunded in full</strong>.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Terms and Conditions */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center font-playfair mb-10">Terms & Conditions</h2>
-          
+          <h2 className="text-3xl font-bold text-center font-playfair mb-10">Policies & Payment</h2>
+
           <div className="max-w-3xl mx-auto">
             <Tabs defaultValue="terms">
               <TabsList className="w-full mb-6">
-                <TabsTrigger value="terms" className="flex-1">Terms</TabsTrigger>
-                <TabsTrigger value="damage" className="flex-1">Damage Policy</TabsTrigger>
-                <TabsTrigger value="payment" className="flex-1">Payment</TabsTrigger>
+                <TabsTrigger value="terms" className="flex-1">Policies</TabsTrigger>
+                <TabsTrigger value="cancellation" className="flex-1">Cancellation</TabsTrigger>
+                <TabsTrigger value="payment" className="flex-1">Banking Details</TabsTrigger>
               </TabsList>
+
               <TabsContent value="terms">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
-                      <AccordionTrigger>Rental Duration</AccordionTrigger>
+                      <AccordionTrigger>Reservation Policy</AccordionTrigger>
                       <AccordionContent>
-                        Standard rental period is 3-5 days, allowing for your graduation ceremony and photographs. Late returns will incur additional daily charges of R50 per day.
+                        Graduation regalia is <strong>only reserved once the R300 deposit has been paid</strong>. No regalia will be held or reserved without payment of the deposit.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
-                      <AccordionTrigger>Deposit Requirements</AccordionTrigger>
+                      <AccordionTrigger>Collection Policy</AccordionTrigger>
                       <AccordionContent>
-                        A refundable deposit of R300 is required for all rentals, in addition to the rental fee. The deposit will be refunded upon return of all items in good condition.
+                        Customers may collect their graduation regalia <strong>one (1) day before the graduation ceremony</strong>. Please ensure you collect on time to avoid any inconvenience on your graduation day.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
-                      <AccordionTrigger>Cancellation Policy</AccordionTrigger>
+                      <AccordionTrigger>Return Policy</AccordionTrigger>
                       <AccordionContent>
-                        Cancellations made more than 7 days before collection will receive a full refund. Cancellations within 7 days will be subject to a 30% cancellation fee.
+                        All regalia must be returned <strong>no later than 12:00 PM (midday) on the day following the graduation</strong>. Late returns may affect your deposit refund.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
-                      <AccordionTrigger>Cleaning Requirements</AccordionTrigger>
+                      <AccordionTrigger>Deposit Refund</AccordionTrigger>
                       <AccordionContent>
-                        Items must be returned in clean condition. Professional cleaning is not required, but items should be free from stains, marks, and excessive wrinkling.
+                        The R300 deposit is fully refunded once the graduation regalia is returned in good condition by the required deadline. Items must be returned clean and undamaged.
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
               </TabsContent>
-              <TabsContent value="damage">
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <p className="text-gray-700 mb-6">
-                    Our damage policy ensures that our graduation attire remains in excellent condition for all customers. Please note the following damage costs that may be deducted from your deposit:
-                  </p>
-                  <ul className="space-y-4">
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Minor stains or marks:</span> R50-R100 depending on severity and cleaning required
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Tears or significant damage to gown:</span> R300-R600 depending on extent of damage
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Damaged cap:</span> R200
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Lost or damaged tassel:</span> R100
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Lost or damaged belt/hood:</span> R250
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-red-500 mr-2 mt-1">•</span>
-                      <div>
-                        <span className="font-medium">Unreturned items:</span> Full replacement cost
-                      </div>
-                    </li>
-                  </ul>
+
+              <TabsContent value="cancellation">
+                <div className="bg-gray-50 p-6 rounded-lg space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-red-500 mt-1 text-lg">•</span>
+                    <p className="text-gray-700">
+                      If a customer cancels <strong>two (2) days before the graduation</strong>, the deposit will <strong>not be refunded</strong>, as the regalia would have already been reserved and set aside.
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-gold mt-1 text-lg">•</span>
+                    <p className="text-gray-700">
+                      The deposit <strong>may only be transferred</strong> if the customer refers another customer to take over the reservation.
+                    </p>
+                  </div>
+                  <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <p className="text-amber-800 text-sm font-medium">
+                      To avoid losing your deposit, please notify us as early as possible if your plans change.
+                    </p>
+                  </div>
                 </div>
               </TabsContent>
+
               <TabsContent value="payment">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold font-playfair mb-4">Payment Methods</h3>
-                  <p className="text-gray-600 mb-6">
-                    We accept the following payment methods:
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    <li className="flex items-center">
-                      <span className="text-gold mr-2">✓</span> Cash
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-gold mr-2">✓</span> Bank Transfer/EFT
-                    </li>
-                    <li className="flex items-center">
-                      <span className="text-gold mr-2">✓</span> Credit/Debit Card
-                    </li>
-                  </ul>
-                  
-                  <h3 className="text-xl font-bold font-playfair mb-4">Payment Schedule</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start">
-                      <span className="text-gold mr-2 mt-1">1.</span>
-                      <div>
-                        <span className="font-medium">Reservation deposit:</span> 50% of rental fee to secure your booking
+                  <h3 className="text-xl font-bold font-playfair mb-6">Banking Details</h3>
+                  <div className="space-y-3 mb-6">
+                    {[
+                      { label: "Bank Name", value: "Capitec Business" },
+                      { label: "Account Holder", value: "Glam Gown Attire" },
+                      { label: "Account Number", value: "1053317808" },
+                      { label: "Account Type", value: "Current" },
+                    ].map(({ label, value }) => (
+                      <div key={label} className="flex justify-between items-center border-b border-gray-200 pb-3">
+                        <span className="text-gray-500 font-medium">{label}</span>
+                        <span className="font-bold text-navy">{value}</span>
                       </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold mr-2 mt-1">2.</span>
-                      <div>
-                        <span className="font-medium">Balance + security deposit:</span> Due upon collection/delivery of attire
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold mr-2 mt-1">3.</span>
-                      <div>
-                        <span className="font-medium">Deposit refund:</span> Processed within 1-3 business days after return and inspection
-                      </div>
-                    </li>
-                  </ul>
+                    ))}
+                  </div>
+                  <div className="bg-gold/10 border border-gold rounded-lg p-4">
+                    <p className="text-sm font-medium text-gray-800">
+                      <span className="text-gold font-bold">Payment Reference:</span> Please use your <strong>full name and graduation date</strong> as the payment reference (e.g. Jane Doe 15 April 2026).
+                    </p>
+                  </div>
                 </div>
               </TabsContent>
             </Tabs>
           </div>
         </div>
       </section>
-      
+
       {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center font-playfair mb-10">Frequently Asked Questions</h2>
-          
+
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>How far in advance should I book my graduation attire?</AccordionTrigger>
                 <AccordionContent>
-                  We recommend booking at least 2-4 weeks in advance, especially during peak graduation season (March-April and September-October) to ensure availability in your size and university specifications.
+                  We recommend booking as early as possible, especially during peak graduation season (March–April and September–October), to ensure availability in your size and university specifications. Remember, your reservation is only confirmed once the deposit is paid.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger>Can I try on the attire before renting?</AccordionTrigger>
+                <AccordionTrigger>When do I collect my regalia?</AccordionTrigger>
                 <AccordionContent>
-                  Yes, you can visit our Melville location during business hours to try on different sizes and ensure the perfect fit for your graduation day.
+                  You may collect your graduation regalia one (1) day before your graduation ceremony. Please ensure you collect on time to avoid any last-minute issues.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger>What happens if the attire doesn't fit when I collect it?</AccordionTrigger>
+                <AccordionTrigger>When must I return the regalia?</AccordionTrigger>
                 <AccordionContent>
-                  We'll do our best to provide a replacement in the correct size, subject to availability. This is why we recommend trying on the attire in advance or providing accurate measurements.
+                  All regalia must be returned no later than 12:00 PM (midday) on the day following your graduation. Returns after this time may affect your deposit refund.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger>Do you offer delivery services?</AccordionTrigger>
+                <AccordionTrigger>What happens to my deposit if I cancel?</AccordionTrigger>
                 <AccordionContent>
-                  Yes, we offer delivery within Johannesburg for an additional fee. Please contact us for delivery rates to your specific location and to arrange delivery timing.
+                  If you cancel two (2) days or less before your graduation, the deposit is non-refundable as your regalia will already have been reserved. However, the deposit can be transferred if you refer another customer to take over your reservation.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger>What if I accidentally damage the graduation attire?</AccordionTrigger>
+                <AccordionTrigger>What payment reference should I use?</AccordionTrigger>
                 <AccordionContent>
-                  Minor wear and tear is expected, but significant damage will result in partial or complete loss of your deposit depending on the extent of damage. See our damage policy for specific costs.
+                  Please use your full name and graduation date as your payment reference (e.g. Jane Doe 15 April 2026). This helps us match your payment to your reservation quickly.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
-                <AccordionTrigger>Can I keep the graduation tassel as a souvenir?</AccordionTrigger>
+                <AccordionTrigger>What if I accidentally damage the graduation attire?</AccordionTrigger>
                 <AccordionContent>
-                  The tassel is part of the rental package and must be returned. However, we do sell tassels separately if you wish to keep one as a memento of your graduation.
+                  Minor wear and tear is understood, but significant damage or failure to return items in good condition may result in partial or complete loss of your R300 deposit.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
-          
+
           <div className="text-center mt-10">
             <p className="text-gray-600 mb-4">Still have questions?</p>
             <Button asChild>
